@@ -12,8 +12,10 @@ function App() {
   const [items, setItems] = useState([])
 
   const setData = ({items}) => {
-    setItems(items)
-    setShow(true)
+    if(items){
+      setItems(items)
+      setShow(true)
+    }
   }
 
   const handleSearch = (e) => {
